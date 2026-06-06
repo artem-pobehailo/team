@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 1440px;
+    width: 100%;
+     padding: 120px 135px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    
+}
+
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #898f8f;
+   
+    margin-bottom: 15px;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fc0;
+    margin-bottom: 40px;
+}
+
+.header-line {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    border: 1px solid #fc0;
+}
+
+.header-line .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 0 5px;
+    
+}
+.icon-svg{
+  fill: #fc0;
+}
+
+
+.team-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+   
+}
+
+
+.member-photo-container {
+     display: flex;
+       max-width: 515px;
+    width: 100%;
+   
+    
+}
+
+.photo-frame {
+    position: relative;
+    padding: 15px;
+     display: inline-block;
+}
+
+
+
+.photo-frame::before, 
+.photo-frame::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid #fc0;
+}
+.photo-frame::before { left: 0; border-left: 1px solid #fc0; }
+.photo-frame::after { right: 0; border-right: 1px solid #fc0; }
+
+.bottom-corners {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; 
+}
+
+.bottom-corners::before, 
+.bottom-corners::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-bottom: 1px solid #fc0;
+}
+
+.bottom-corners::before {
+    left: 0px;
+    border-left: 1px solid #fc0;
+}
+
+.bottom-corners::after {
+    right: 0px;
+    border-right: 1px solid #fc0;
+}
+
+.photo-frame img {
+    display: block;
+   max-width: 100%;
+    height: auto;
+    height: auto;
+    border: 1px solid #fc0;
+
+  
+  
+}
+
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 515px;
+    width: 100%;
+    border-left: 1px solid #fc0;
+  padding-left: 85px;
+}
+
+.member-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.title-underline {
+    width: 100px;
+    height: 1px;
+    background-color: #fc0;
+    margin: 0 auto 30px;
+}
+
+.member-role {
+    font-size: 24px;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+
+.social-links {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: 0.3s;
+     list-style-type: none;
+     margin-bottom: 50px;
+}
+ .social-items{
+    fill: #ccc;
+    stroke-width: 2px;
+    stroke: #ccc;
+
+}
+
+.link{
+  display: flex;
+  width: 30px;
+   height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+.social-items:hover, .link:hover {
+  border-color:  #ffcc00;
+  fill: #ffcc00;
+  stroke: #ffcc00;
+}
+
+
+.member-bio {
+font-family: "Raleway", sans-serif;
+font-weight: 500;
+font-size: 14px;
+
+ 
+line-height: 1.71429;
+text-align: center;
+    margin-bottom: 20px;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.separator span {
+    width: 20px;
+    height: 4px;
+   background: #fc0;
+}
+
+.view-profile-btn {
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  border: 1px solid #fc0;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 118px;
+  height: 24px;
+
+font-family: "Open Sans", sans-serif;
+font-weight: 700;
+font-size: 14px;
+
+
+line-height: 1;
+text-transform: uppercase;
+text-align: center;
+color: #666;
+}
+
+.view-profile-btn:hover {
+    background-color: #ffcc00;
+    color: #fff;
+}
